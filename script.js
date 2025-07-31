@@ -48,21 +48,91 @@ class PortfolioRenderer {
     }
 
     updateMeta() {
-        if (this.data.meta) {
-            if (this.data.meta.title) {
-                document.title = this.data.meta.title;
+        if (!this.data.meta) return;
+
+        const { 
+            title, 
+            description, 
+            keywords, 
+            author, 
+            url, 
+            image, 
+            imageAlt, 
+            siteName 
+        } = this.data.meta;
+        
+        // Update basic meta tags
+        if (title) {
+            document.title = title;
+            this.updateMetaTag('property', 'og:title', title);
+            this.updateMetaTag('property', 'twitter:title', title);
+        }
+        
+        if (description) {
+            this.updateMetaTag('name', 'description', description);
+            this.updateMetaTag('property', 'og:description', description);
+            this.updateMetaTag('property', 'twitter:description', description);
+        }
+        
+        if (keywords) {
+            this.updateMetaTag('name', 'keywords', keywords);
+        }
+        
+        if (author) {
+            this.updateMetaTag('name', 'author', author);
+        }
+        
+        if (url) {
+            this.updateMetaTag('property', 'og:url', url);
+            this.updateMetaTag('property', 'twitter:url', url);
+            this.updateMetaTag('rel', 'canonical', url, 'link');
+        }
+        
+        if (image) {
+            this.updateMetaTag('property', 'og:image', image);
+            this.updateMetaTag('property', 'twitter:image', image);
+        }
+        
+        if (imageAlt) {
+            this.updateMetaTag('property', 'og:image:alt', imageAlt);
+        }
+        
+        if (siteName) {
+            this.updateMetaTag('property', 'og:site_name', siteName);
+        }
+    }
+
+    updateMetaTag(attrName, attrValue, content, elementType = 'meta') {
+        try {
+            let selector;
+            if (elementType === 'link') {
+                selector = `link[${attrName}="${attrValue}"]`;
+            } else {
+                selector = `meta[${attrName}="${attrValue}"]`;
             }
-            if (this.data.meta.description) {
-                const metaDesc = document.querySelector('meta[name="description"]');
-                if (metaDesc) {
-                    metaDesc.content = this.data.meta.description;
+            
+            let element = document.querySelector(selector);
+            
+            if (element) {
+                if (elementType === 'link') {
+                    element.href = content;
                 } else {
-                    const meta = document.createElement('meta');
-                    meta.name = 'description';
-                    meta.content = this.data.meta.description;
-                    document.head.appendChild(meta);
+                    element.content = content;
                 }
+            } else {
+                element = document.createElement(elementType);
+                element.setAttribute(attrName, attrValue);
+                
+                if (elementType === 'link') {
+                    element.href = content;
+                } else {
+                    element.content = content;
+                }
+                
+                document.head.appendChild(element);
             }
+        } catch (error) {
+            console.warn(`Failed to update meta tag ${attrValue}:`, error);
         }
     }
 

@@ -1,7 +1,11 @@
 {
   "meta": {
     "title": "Juned Khan - Frontend Engineer",
-    "description": "Professional portfolio of Juned Khan, Frontend Engineer"
+    "description": "Frontend-focused full-stack engineer with 4.5+ years of experience building scalable web and mobile apps in domains such as Blockchain, E-commerce, Fantasy Sports and Content Streaming.",
+    "keywords": "Juned Khan, Frontend Engineer, React, React Native, TypeScript, JavaScript, Full Stack Developer, Software Engineer, Portfolio, Blockchain, E-commerce, Fantasy Sports",
+    "author": "Juned Khan",
+    "url": "https://juned1998.github.io/portfolio",
+    "siteName": "Juned Khan Portfolio"
   },
   "personal": {
     "name": "Juned Khan",
