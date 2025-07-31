@@ -1,4 +1,4 @@
-# Portfolio Website - Juned Khan
+# Portfolio Website - Juned Khan.
 
 A clean, professional portfolio website showcasing skills, experience, and projects. Built with vanilla HTML, CSS, and JavaScript for optimal performance and simplicity.
 
