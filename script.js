@@ -682,12 +682,6 @@ class ThemeManager {
         const newTheme = this.currentTheme === 'light' ? 'dark' : 'light';
         this.setTheme(newTheme);
         this.updateThemeIcon();
-        
-        // Add a smooth transition effect
-        document.body.style.transition = 'background-color 0.3s ease, color 0.3s ease';
-        setTimeout(() => {
-            document.body.style.transition = '';
-        }, 300);
     }
 
     updateThemeIcon() {

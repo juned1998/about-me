@@ -6,6 +6,31 @@
     <title>Juned Khan - Frontend Engineer</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+    <!-- Early theme initialization to prevent flash -->
+    <script>
+        (function() {
+            try {
+                // Get stored theme or system preference
+                let theme = 'light';
+                try {
+                    const stored = localStorage.getItem('theme');
+                    if (stored) {
+                        theme = stored;
+                    } else if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+                        theme = 'dark';
+                    }
+                } catch (e) {
+                    // Fallback to light theme
+                }
+                
+                // Apply theme immediately
+                document.documentElement.setAttribute('data-theme', theme);
+            } catch (e) {
+                console.warn('Could not initialize theme early:', e);
+            }
+        })();
+    </script>
 </head>
 <body>
     <!-- Theme Toggle -->
