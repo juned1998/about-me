@@ -1,0 +1,193 @@
+{
+  "meta": {
+    "title": "Juned Khan - Frontend Engineer",
+    "description": "Professional portfolio of Juned Khan, Frontend Engineer"
+  },
+  "personal": {
+    "name": "Juned Khan",
+    "title": "Frontend Engineer",
+    "summary": "Frontend-focused full-stack engineer with <strong>4.5+ years of experience</strong> building scalable web and mobile apps in domains such as Blockchain, E-commerce, Fantasy Sports and Content Streaming."
+  },
+  "contacts": [
+    {
+      "type": "linkedin",
+      "icon": "fab fa-linkedin",
+      "label": "linkedin.com/in/juned111",
+      "url": "https://linkedin.com/in/juned111"
+    },
+    {
+      "type": "github",
+      "icon": "fab fa-github",
+      "label": "github.com/juned1998",
+      "url": "https://github.com/juned1998"
+    }
+  ],
+  "sections": [
+    {
+      "id": "about",
+      "title": "Summary",
+      "type": "text",
+      "content": "Frontend-focused full-stack engineer with <strong>4.5+ years of experience</strong> building scalable web and mobile apps in domains such as Blockchain, E-commerce, Fantasy Sports and Content Streaming."
+    },
+    {
+      "id": "experience",
+      "title": "Work Experience",
+      "type": "timeline",
+      "items": [
+        {
+          "title": "Software Engineer - Frontend",
+          "subtitle": {
+            "text": "FanCode (Dream11)",
+            "links": [
+              {"text": "FanCode", "url": "https://www.fancode.com/"},
+              {"text": "Dream11", "url": "https://www.dreamsports.group/"}
+            ]
+          },
+          "period": "April 2024 - Present",
+          "details": [
+            {
+              "text": "Introduced NPM Madge script to identify all aliased import statements with circular dependencies throughout the monorepositories.",
+              "tags": ["React", "React Native", "TypeScript"]
+            },
+            {
+              "text": "Optimized the SSR performance by refactoring mounting logic of multiple screens."
+            },
+            {
+              "text": "Responsible for maintaining 12 e-commerce stores of major IPL teams scaled from a single codebase ensuring extremely high re-usability and extending Figma scripts to maintain dynamic global color palette for brand specific themes."
+            },
+            {
+              "text": "Engineered dynamic sitemaps updated daily via CRON jobs, reflecting real-time stock inventory and significantly improving SEO and product discoverability."
+            },
+            {
+              "text": "Delivered end-to-end features like Ratings & Review System, Smart filters, Collateral Payments with Dream11 Rewards which contributed significant increase of 10.5% in user-acquisition & 15.6% in user-engagement."
+            },
+            {
+              "text": "Led comprehensive PR reviews across shared frontend repositories and participated in hiring loops by evaluating technical assignments and conducting interviews."
+            }
+          ]
+        },
+        {
+          "title": "Senior Software Engineer",
+          "subtitle": {
+            "text": "Rejolut Technology Solutions",
+            "links": [
+              {"text": "Rejolut Technology Solutions", "url": "https://rejolut.com/"}
+            ]
+          },
+          "period": "June 2021 - April 2024",
+          "details": [
+            {
+              "text": "Worked on POC to leverage AI for UI development using a well-defined design system and components library to reduce the deliverables turn-around time."
+            },
+            {
+              "text": "Led development of KPMG's decentralized identity and verifiable credentials platform from scratch, enabling secure access for 250K+ employees.",
+              "tags": ["React", "React Native", "NEAR Protocol"]
+            },
+            {
+              "text": "Reverse-engineered Hashlips engine to generate 10K+ unique NFTs from layered assets for a live Ethereum collection.",
+              "link": {
+                "text": "OpenSea: Kryptoria AlphaCitizens",
+                "url": "https://opensea.io/collection/kryptoria-alphacitizens"
+              }
+            },
+            {
+              "text": "Architected the frontend of Kryptoria, an Ethereum-based metaverse game, with MetaMask wallet login, seamless minting, and low-gas on-chain gameplay.",
+              "tags": ["React", "Web3.js", "Unity 3D"]
+            },
+            {
+              "text": "Built and optimized Solster, a Solana-based DeFi platform handling 30+ fundraising campaigns with complex on-chain flows, staking, and lottery systems.",
+              "tags": ["React", "Solana.js"]
+            },
+            {
+              "text": "Received Best Debutant Award in recognition of my rapid technical growth leading to a promotion for Senior role"
+            }
+          ]
+        },
+        {
+          "title": "Web Developer, Intern",
+          "subtitle": {
+            "text": "Activa Innovations Pvt Ltd"
+          },
+          "period": "August 2020 – January 2021",
+          "details": [
+            {
+              "text": "Developed Godi Energy's website, which led to successful funding and played a full-stack role in implementing major data-intensive components of dashboard for a battery monitoring system.",
+              "tags": ["React", "Express", "PostgreSQL"]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "education",
+      "title": "Education",
+      "type": "timeline",
+      "items": [
+        {
+          "title": "B.E in Computer Engineering",
+          "subtitle": {
+            "text": "Mumbai University"
+          },
+          "period": "2016 – 2020",
+          "details": [
+            {
+              "text": "Studied Operating Systems; Databases; Discrete Mathematics; Algorithms; Microprocessors; Computer Networks; Computer Graphics; Engineering Mathematics; etc."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "skills",
+      "title": "Technical Skills",
+      "type": "categories",
+      "items": {
+        "Frontend": ["React", "React Native", "TypeScript", "HTML5", "CSS3", "JavaScript", "GraphQL", "Figma", "Storybook", "Jest", "Playwright"],
+        "Backend": ["Node.js", "Express", "PostgreSQL"],
+        "DevOps": ["Sentry", "New Relic", "Docker", "Kubernetes", "AWS(S3, EC2, Lambda functions)"]
+      }
+    },
+    {
+      "id": "projects",
+      "title": "Projects",
+      "type": "cards",
+      "items": [
+        {
+          "title": "NLP driven Assignments Evaluation",
+          "content": "Implemented NLP-driven answer validation system using cosine similarity algorithm on search-scraped data, with features like question bank generation and assignment CRUD operations."
+        }
+      ]
+    },
+    {
+      "id": "contact",
+      "title": "Contact",
+      "type": "contact",
+      "items": "contacts"
+    }
+  ],
+  "theme": {
+    "colors": {
+      "primary": "#007bff",
+      "primaryDark": "#4a9eff"
+    },
+    "fonts": {
+      "primary": "-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif"
+    },
+    "features": {
+      "darkMode": true,
+      "themeToggle": true,
+      "smoothScroll": true
+    }
+  },
+  "config": {
+    "navigation": {
+      "enabled": true,
+      "position": "top-right",
+      "style": "dropdown"
+    },
+    "layout": {
+      "containerWidth": "900px",
+      "sectionSpacing": "60px"
+    }
+  }
+} 

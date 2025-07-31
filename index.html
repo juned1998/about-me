@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Juned Khan - Frontend Engineer</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Theme Toggle -->
+    <div class="theme-toggle">
+        <i class="fas fa-moon" id="theme-icon"></i>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-brand">Juned Khan</div>
+            <ul class="nav-menu">
+                <!-- Dynamic navigation generated from data.json -->
+            </ul>
+            <div class="nav-toggle">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Header Section -->
+    <header class="header">
+        <div class="container">
+            <h1 class="name"><!-- Dynamic content from data.json --></h1>
+            <h2 class="title"><!-- Dynamic content from data.json --></h2>
+            <div class="contact-info" id="header-contacts">
+                <!-- Dynamic content loaded from data.json -->
+            </div>
+        </div>
+    </header>
+
+    <!-- Summary Section -->
+    <section id="about" class="section">
+        <div class="container">
+            <h2>Summary</h2>
+            <p><!-- Dynamic content from data.json --></p>
+        </div>
+    </section>
+
+    <!-- Work Experience Section -->
+    <section id="experience" class="section">
+        <div class="container">
+            <h2>Work Experience</h2>
+            
+            <div class="job">
+                <h3>Software Engineer - Frontend</h3>
+                <h4><a href="https://www.fancode.com/" target="_blank">FanCode</a> (<a href="https://www.dreamsports.group/" target="_blank">Dream11</a>)</h4>
+                <p class="date">April 2024 - Present</p>
+                <ul>
+                    <li>Introduced NPM Madge script to identify all aliased import statements with circular dependencies throughout the monorepositories.<br>
+                        <em>Tech Stack: React, React Native, TypeScript</em></li>
+                    <li>Optimized the SSR performance by refactoring mounting logic of multiple screens.</li>
+                    <li>Responsible for maintaining 12 e-commerce stores of major IPL teams scaled from a single codebase ensuring extremely high re-usability and extending Figma scripts to maintain dynamic global color palette for brand specific themes.</li>
+                    <li>Engineered dynamic sitemaps updated daily via CRON jobs, reflecting real-time stock inventory and significantly improving SEO and product discoverability.</li>
+                    <li>Delivered end-to-end features like Ratings & Review System, Smart filters, Collateral Payments with Dream11 Rewards which contributed significant increase of 10.5% in user-acquisition & 15.6% in user-engagement.</li>
+                    <li>Led comprehensive PR reviews across shared frontend repositories and participated in hiring loops by evaluating technical assignments and conducting interviews.</li>
+                </ul>
+            </div>
+
+            <div class="job">
+                <h3>Senior Software Engineer</h3>
+                <h4><a href="https://rejolut.com/" target="_blank">Rejolut Technology Solutions</a></h4>
+                <p class="date">June 2021 - April 2024</p>
+                <ul>
+                    <li>Worked on POC to leverage AI for UI development using a well-defined design system and components library to reduce the deliverables turn-around time.</li>
+                    <li>Led development of KPMG's decentralized identity and verifiable credentials platform from scratch, enabling secure access for 250K+ employees.<br>
+                        <em>Tech Stack: React, React Native, NEAR Protocol</em></li>
+                    <li>Reverse-engineered Hashlips engine to generate 10K+ unique NFTs from layered assets for a live Ethereum collection. (<a href="https://opensea.io/collection/kryptoria-alphacitizens" target="_blank">OpenSea: Kryptoria AlphaCitizens</a>)</li>
+                    <li>Architected the frontend of Kryptoria, an Ethereum-based metaverse game, with MetaMask wallet login, seamless minting, and low-gas on-chain gameplay.<br>
+                        <em>Tech Stack: React, Web3.js, Unity 3D</em></li>
+                    <li>Built and optimized Solster, a Solana-based DeFi platform handling 30+ fundraising campaigns with complex on-chain flows, staking, and lottery systems.<br>
+                        <em>Tech Stack: React, Solana.js</em></li>
+                    <li>Received Best Debutant Award in recognition of my rapid technical growth leading to a promotion for Senior role</li>
+                </ul>
+            </div>
+
+            <div class="job">
+                <h3>Web Developer, Intern</h3>
+                <h4>Activa Innovations Pvt Ltd</h4>
+                <p class="date">August 2020 – January 2021</p>
+                <ul>
+                    <li>Developed Godi Energy's website, which led to successful funding and played a full-stack role in implementing major data-intensive components of dashboard for a battery monitoring system.<br>
+                        <em>Tech Stack: React, Express, PostgreSQL</em></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="section">
+        <div class="container">
+            <h2>Education</h2>
+            <div class="education">
+                <h3>B.E in Computer Engineering</h3>
+                <h4>Mumbai University</h4>
+                <p class="date">2016 – 2020</p>
+                <p>Studied Operating Systems; Databases; Discrete Mathematics; Algorithms; Microprocessors; Computer Networks; Computer Graphics; Engineering Mathematics; etc.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Technical Skills Section -->
+    <section id="skills" class="section">
+        <div class="container">
+            <h2>Technical Skills</h2>
+            <p><strong>Frontend:</strong> React, React Native, TypeScript, HTML5, CSS3, JavaScript, GraphQL, Figma, Storybook, Jest, Playwright</p>
+            <p><strong>Backend:</strong> Node.js, Express, PostgreSQL</p>
+            <p><strong>DevOps:</strong> Sentry, New Relic, Docker, Kubernetes, AWS(S3, EC2, Lambda functions)</p>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section">
+        <div class="container">
+            <h2>Projects</h2>
+            
+            <div class="project">
+                <h3>NLP driven Assignments Evaluation</h3>
+                <p>Implemented NLP-driven answer validation system using cosine similarity algorithm on search-scraped data, with features like question bank generation and assignment CRUD operations.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section">
+        <div class="container">
+            <h2>Contact</h2>
+            <div class="contact-links" id="contact-links">
+                <!-- Dynamic content loaded from data.json -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p class="footer-note">
+                <i class="fas fa-code"></i> 
+                Want to create your own digital resume? 
+                <a href="https://github.com/juned1998/portfolio" target="_blank">Fork this repository</a>
+            </p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html> 
